@@ -1,0 +1,23 @@
+<div class="col-md-6 col-md-offset-3">
+<div class="panel panel-info">
+  <div class="panel-heading">Employee Info</div>
+  
+	<table class='table'>
+		
+	<tr><th>Firstname</th><th>Lastname</th><th>Phone No.</th><th>Address</th><th>Functions</th></tr>
+
+	<tr ng-repeat='message in messages'>
+		
+	<td>{{message.firstname}}</td>
+	<td>{{message.lastname}}</td>
+	<td>{{message.phone}}</td>
+	<td>{{message.address}}</td>
+	<td><a href='#/employee/{{message.id}}'>Edit </a>|<a href='#'> Delete</a></td>
+	</tr>
+
+	</table>
+
+
+
+</div>
+</div>
